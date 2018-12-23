@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <!-- Site Properties -->
-  <title>Homepage - Semantic</title>
+  <title>Hayle Home Appliances</title>
   <link rel="stylesheet" type="text/css" href="./css/semantic-components/reset.min.css">
   <link rel="stylesheet" type="text/css" href="./css/semantic-components/site.min.css">
   <link rel="stylesheet" type="text/css" href="./css/semantic-components/card.min.css">
@@ -33,48 +33,14 @@
   <script src="./js/semantic-components/visibility.min.js"></script>
   <script src="./js/semantic-components/sidebar.min.js"></script>
   <script src="./js/semantic-components/transition.min.js"></script>
-  <script>
-  $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-
-    })
-  ;
-  </script>
 </head>
 <body>
-
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-  <div class="ui container">
-    <a class="active item">Home</a>
-    <a class="item">Products</a>
-  </div>
-</div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <a class="active item">Home</a>
-  <a class="item">Products</a>
+  <a class="item" href="#products">Products</a>
 </div>
-
 
 <!-- Page Contents -->
 <div class="pusher">
@@ -85,7 +51,7 @@
           <i class="sidebar icon"></i>
         </a>
         <a class="active item">Home</a>
-        <a class="item">Products</a>
+        <a class="item" href="#products">Products</a>
       </div>
     </div>
 
@@ -94,89 +60,108 @@
         Hayle Home Appliances
       </h1>
       <h2>Enriching your home with range of products</h2>
-      <div class="ui huge primary button">Click here to see our products <i class="right arrow icon"></i></div>
     </div>
   </div>
-
-  <div class="ui grid container mt20 mb20">
-    <div class="four wide column">
+  <div class="ui container mt50 mb50">
+    <div class="flex-container" id="products">
       <div class="ui card">
         <a class="image" href="#">
           <img src="./img/steve.jpg">
         </a>
         <div class="content">
-          <a class="header" href="#">Steve Jobes</a>
-          <div class="meta">
-            <a>Last Seen 2 days ago</a>
+          <div class="ui bulleted list">
+            <div class="item">Gaining Access</div>
+            <div class="item">Inviting Friends</div>
+            <div class="item">
+              <div>Benefits</div>
+              <div class="list">
+                <a class="item" href="#">Link to somewhere</a>
+                <div class="item">Rebates</div>
+                <div class="item">Discounts</div>
+              </div>
+            </div>
+            <div class="item">Warranty</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="four wide column">
       <div class="ui card">
         <a class="image" href="#">
           <img src="./img/steve.jpg">
         </a>
         <div class="content">
-          <a class="header" href="#">Steve Jobes</a>
-          <div class="meta">
-            <a>Last Seen 2 days ago</a>
+          <div class="ui bulleted list">
+            <div class="item">Gaining Access</div>
+            <div class="item">Inviting Friends</div>
+            <div class="item">
+              <div>Benefits</div>
+              <div class="list">
+                <a class="item" href="#">Link to somewhere</a>
+                <div class="item">Rebates</div>
+                <div class="item">Discounts</div>
+              </div>
+            </div>
+            <div class="item">Warranty</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="four wide column">
       <div class="ui card">
         <a class="image" href="#">
           <img src="./img/steve.jpg">
         </a>
         <div class="content">
-          <a class="header" href="#">Steve Jobes</a>
-          <div class="meta">
-            <a>Last Seen 2 days ago</a>
+          <div class="ui bulleted list">
+            <div class="item">Gaining Access</div>
+            <div class="item">Inviting Friends</div>
+            <div class="item">
+              <div>Benefits</div>
+              <div class="list">
+                <a class="item" href="#">Link to somewhere</a>
+                <div class="item">Rebates</div>
+                <div class="item">Discounts</div>
+              </div>
+            </div>
+            <div class="item">Warranty</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="four wide column">
       <div class="ui card">
         <a class="image" href="#">
           <img src="./img/steve.jpg">
         </a>
         <div class="content">
-          <a class="header" href="#">Steve Jobes</a>
-          <div class="meta">
-            <a>Last Seen 2 days ago</a>
+          <div class="ui bulleted list">
+            <div class="item">Gaining Access</div>
+            <div class="item">Inviting Friends</div>
+            <div class="item">
+              <div>Benefits</div>
+              <div class="list">
+                <a class="item" href="#">Link to somewhere</a>
+                <div class="item">Rebates</div>
+                <div class="item">Discounts</div>
+              </div>
+            </div>
+            <div class="item">Warranty</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted divided equal height stackable grid">
         <div class="three wide column">
           <h4 class="ui inverted header">About</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
             <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">Religious Ceremonies</a>
-            <a href="#" class="item">Gazebo Plans</a>
+            <a href="#" class="item">About Us</a>
           </div>
         </div>
         <div class="three wide column">
-          <h4 class="ui inverted header">Services</h4>
+          <h4 class="ui inverted header">Social</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Banana Pre-Order</a>
-            <a href="#" class="item">DNA FAQ</a>
-            <a href="#" class="item">How To Access</a>
-            <a href="#" class="item">Favorite X-Men</a>
+            <a href="#" class="item">Facebook</a>
+            <a href="#" class="item">Twitter</a>
           </div>
-        </div>
-        <div class="seven wide column">
-          <h4 class="ui inverted header">Footer Header</h4>
-          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
         </div>
       </div>
     </div>

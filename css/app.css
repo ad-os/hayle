@@ -1,5 +1,17 @@
+.ui.card {
+  margin: 0 10px 0 10px;
+}
+
+.ui.card:first-child {
+  margin-left: 0;
+}
+
 .hidden.menu {
   display: none;
+}
+
+.flex-container {
+  display: flex;
 }
 
 .main-img {
@@ -7,12 +19,12 @@
   background-size: cover !important; 
 }
 
-.mt20 {
-  margin-top: 20px !important;
+.mt50 {
+  margin-top: 50px !important;
 }
 
-.mb20 {
-  margin-bottom: 20px !important;
+.mb50 {
+  margin-bottom: 50px !important;
 }
 
 .masthead.segment { 

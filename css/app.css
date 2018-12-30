@@ -1,9 +1,13 @@
 .ui.card {
-  margin: 0 10px 0 10px;
+  margin: 0;
 }
 
-.ui.card:first-child {
-  margin-left: 0;
+.ui.card>.image>img{
+  height: 240px;
+}
+
+.center {
+  text-align: center;
 }
 
 .hidden.menu {
@@ -12,6 +16,8 @@
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .main-img {
@@ -25,6 +31,22 @@
 
 .mb50 {
   margin-bottom: 50px !important;
+}
+
+.mt10 {
+  margin-top: 10px !important;
+}
+
+.ml {
+  margin-left: 10px !important;
+}
+
+.pd10 {
+  padding: 10px !important;
+}
+
+.mg10 {
+  margin: 10px !important;
 }
 
 .masthead.segment { 
